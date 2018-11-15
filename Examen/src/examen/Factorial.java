@@ -8,22 +8,22 @@ public class Factorial {
 
     public static void main(String[] args) {
 
-        int j;
-        int f;
+        int numero; // Cambio j por numero
+        int factorial; // Cambio f por factorial
 
-        j = 8;
+        numero = 8; // j por numero
 
-        int i;
-        if (j == 0) {
-            f = 1;
+        int producto; // i lo cambio por producto
+        if (numero == 0) { // Cambio j por numero
+            factorial = 1; // Cambio f por factorial
         } else {
-            f = 1;
-            for (i = j; i >= 1; i--) {
-                f = f * i;
+            factorial = 1; // Cambio f por factorial
+            for (producto = numero; producto >= 1; producto--) { // Cambio i por producto, j por numero
+                factorial = factorial * producto; // Cambio f por factorial , i por producto
             }
         }
 
-        System.out.println(f);
+        System.out.println(factorial); //Cambio f por factorial
 
     }
 
