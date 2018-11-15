@@ -9,28 +9,28 @@ import javax.swing.JOptionPane;
 public class loVivido {
 
     public static void main(String[] args) {
-        String n;
-        String e;
+        String nombre; // Cambio la variable n por nombre
+        String edad; // Cambio la variable e por edad
 
-        int m;
-        int d;
-        int h;
-        int a;
+        int meses;  // Cambio la variable m por meses
+        int dias; // Cambio la variable d por dias
+        int horas; // Cambio la variable h por horas
+        int años; // Cambio la variable a por años
 
-        n = JOptionPane.showInputDialog("Escriba su nombre: ");
-        e = JOptionPane.showInputDialog("Escriba su edad: ");
+        nombre = JOptionPane.showInputDialog("Escriba su nombre: "); // Cambia n por nombre
+        edad = JOptionPane.showInputDialog("Escriba su edad: "); // Cambia e por edad
 
-        a = Integer.parseInt(e);
+        años = Integer.parseInt(edad); // Cambia a por años
 
-        m = (a * 12);
-        d = (a * 365);
-        h = (d * 24);
+        meses = (años * 12); // Cambia m por meses
+        dias = (años * 365); // Cambia d por dias
+        horas = (dias * 24); // Cambia h por horas
 
-        JOptionPane.showMessageDialog(null, "Meses: " + m, "Numero de meses vividos de " + n, JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Meses: " + meses, "Numero de meses vividos de " + nombre, JOptionPane.INFORMATION_MESSAGE); // Cambia m y n por meses y nombre
 
-        JOptionPane.showMessageDialog(null, "Días: " + d, "Numero de días vividos de " + n, JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Días: " + dias, "Numero de días vividos de " + nombre, JOptionPane.INFORMATION_MESSAGE); // Cambia d y n por dias y nombre
 
-        JOptionPane.showMessageDialog(null, "Horas: " + h, "Numero de horas vividos de " + n, JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Horas: " + horas, "Numero de horas vividos de " + nombre, JOptionPane.INFORMATION_MESSAGE); // Cambia h y n por horas y nombre
 
         System.exit(0);
 
